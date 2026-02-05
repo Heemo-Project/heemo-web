@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+* {
+  @apply box-border;
+}
+
+html,
+body {
+  @apply h-full;
+}
+
+body {
+  @apply bg-white text-gray-900 antialiased;
+  font-family: var(--font-pretendard), system-ui, sans-serif;
+}
+
+/* =========================
+   Scroll Style
+========================= */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+/* =========================
+   Link Default Style
+========================= */
+
+a {
+  @apply text-inherit no-underline;
+}
+
+/* =========================
+   Button Reset
+========================= */
+
+button {
+  @apply cursor-pointer;
+}
+
+/* =========================
+   Image Default
+========================= */
+
+img {
+  @apply block max-w-full;
+}
+
+/* =========================
+   Input Reset
+========================= */
+
+input,
+textarea,
+select {
+  @apply outline-none;
+}
+
+/* =========================
+   Selection Color
+========================= */
+
+::selection {
+  @apply bg-blue-500 text-white;
+}
